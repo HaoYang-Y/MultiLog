@@ -4,8 +4,9 @@
 #include <string>
 #include <cstdio>
 
-namespace multilog {
-LogStream::LogStream(multilog::Logger &logger) : logger_(logger) {}
+namespace multi{
+ namespace log {
+LogStream::LogStream(Logger &logger) : logger_(logger) {}
 
 LogStream::~LogStream() {}
 LogStream::LogStreamCommit LogStream::ignore() {
@@ -85,4 +86,5 @@ LogStream::LogStreamCommit::~LogStreamCommit() {
     log_stream_->clear(level_);
   }
 }
+} // namespace log
 } // namespace multilog

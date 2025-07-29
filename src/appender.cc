@@ -1,6 +1,7 @@
 #include "appender.h"
 
-namespace multilog {
+namespace multi{
+ namespace log {
 Appender::Appender(size_t size) : size_(size),is_running_(true) {}
 Appender::~Appender() {}
 void Appender::append(LogEvent event) {
@@ -10,4 +11,5 @@ void Appender::append(LogEvent event) {
     cv_.notify_one();
   }
 }
+} // namespace log
 } // namespace multilog

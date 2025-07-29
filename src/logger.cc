@@ -3,7 +3,8 @@
 #include "appender_file.h"
 #include "log_config.h"
 
-namespace multilog {
+namespace multi{
+namespace log {
 
 Logger &Logger::getInstance() {
   static Logger instance;
@@ -30,6 +31,7 @@ Logger::Logger() : level_(LogLevel::CRITICAL),appenders_() {
 level_ = LogLevel::LOGLEVEL;
 #endif
 }
+} // namespace log
 } // namespace multilog
   /*
   TODO

@@ -1,6 +1,7 @@
 #include "log_type.h"
 
-namespace multilog {
+namespace multi{
+ namespace log {
     const char* LogLevel_to_str(LogLevel level){
   switch (level) {
   case LogLevel::TRACE:
@@ -21,4 +22,5 @@ namespace multilog {
     return "unknown";
   }
 }
+} // namespace log
 }

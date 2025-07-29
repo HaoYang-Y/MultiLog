@@ -5,10 +5,11 @@
 #include <chrono>
 #include <string>
 
-namespace multilog {
+namespace multi{
+  namespace log {
 class LogEvent {
 public:
-  LogEvent(multilog::LogLevel level);
+  LogEvent(multi::log::LogLevel level);
   void set_message(std::string message);
   const std::string &get_message() const;
   LogLevel get_level();
@@ -18,6 +19,7 @@ private:
   std::string message_;
   std::chrono::system_clock::time_point timestamp_;
 };
+} // namespace log
 } // namespace multilog
 #endif
 /*

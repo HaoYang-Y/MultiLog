@@ -1,6 +1,9 @@
 #ifndef _LOG_UTILS_H_
 #define _LOG_UTILS_H_
-namespace multilog {
+#include <string>
+
+namespace multi{
+ namespace log {
 template <typename T> inline const char *format_specifier() {
   return "unknow";
 }
@@ -21,6 +24,7 @@ template <> inline const char *format_specifier<float>() { return "%.6f"; }
 template <> inline const char *format_specifier<double>() { return "%.6lf"; }
 template <> inline const char *format_specifier<const char *>() { return "%s"; }
 template <> inline const char *format_specifier<std::string>() { return "%s"; }
+} // namespace log
 } // namespace multilog
 
 #endif

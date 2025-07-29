@@ -8,7 +8,8 @@
 #include <cstring>
 #include <sstream>
 
-namespace multilog {
+namespace multi{
+ namespace log {
 class Logger;
 class LogStream {
 public:
@@ -83,6 +84,7 @@ private:
   size_t stack_len_;
   std::string heap_buf_;
 };
+} // namespace log
 } // namespace multilog
 
 #endif

@@ -1,7 +1,8 @@
 #include "appender_file.h"
 #include <iostream>
 
-namespace multilog {
+namespace multi{
+ namespace log {
 AppenderFile::AppenderFile(size_t size) : Appender(size), is_sync(true) {
   ofs_.open(file, std::ios::app);
   if (!ofs_.is_open()) {
@@ -44,4 +45,5 @@ void AppenderFile::run() {
   }
   return;
 }
+} // namespace log
 } // namespace multilog

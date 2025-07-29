@@ -1,6 +1,7 @@
 #ifndef _TYPE_H_
 #define _TYPE_H_
-namespace multilog {
+namespace multi{
+  namespace log {
 enum class LogLevel : int {
   TRACE = 0,
   DEBUG = 1,
@@ -12,6 +13,7 @@ enum class LogLevel : int {
 };
 
 const char* LogLevel_to_str(LogLevel level);
+} // namespace log
 }
 #endif
 /*

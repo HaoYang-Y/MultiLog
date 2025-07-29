@@ -1,6 +1,7 @@
 #ifndef _LOG_STAMP_H_
 #define _LOG_STAMP_H_
-namespace multilog
+namespace multi{
+   namespace log
 {
     class LogStamp
     {
@@ -10,7 +11,7 @@ namespace multilog
         LogStamp(/* args */);
         ~LogStamp();
     };
-    
+    } // namespace log
 } // namespace multilog
 
 #endif

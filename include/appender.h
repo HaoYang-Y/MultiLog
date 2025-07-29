@@ -8,7 +8,8 @@
 #include <vector>
 #include <thread>
 
-namespace multilog {
+namespace multi{
+namespace log {
 class Appender {
 public:
   Appender(size_t size);
@@ -31,6 +32,7 @@ protected:
 
 private:
 };
+} // namespace log
 } // namespace multilog
 /*
 1. 成员变量初始化顺序错误

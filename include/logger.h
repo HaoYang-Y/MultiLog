@@ -6,7 +6,8 @@
 #include <memory>
 #include <vector>
 
-namespace multilog {
+namespace multi{
+ namespace log {
 
 class LogEvent;
 class Appender;
@@ -31,27 +32,28 @@ private:
   LogLevel level_;
   std::vector<std::unique_ptr<Appender>> appenders_;
 };
+} // namespace log
 } // namespace multilog
 
 #define LOGTRACE                                                               \
-  multilog::Logger::getInstance().log(multilog::LogLevel::TRACE, __FILE__,     \
+  multi::log::Logger::getInstance().log(multi::log::LogLevel::TRACE, __FILE__,     \
                                       __LINE__)
 #define LOGDEBUG                                                               \
-  multilog::Logger::getInstance().log(multilog::LogLevel::DEBUG, __FILE__,     \
+  multi::log::Logger::getInstance().log(multi::log::LogLevel::DEBUG, __FILE__,     \
                                       __LINE__)
 #define LOGINFO                                                                \
-  multilog::Logger::getInstance().log(multilog::LogLevel::INFO, __FILE__,      \
+  multi::log::Logger::getInstance().log(multi::log::LogLevel::INFO, __FILE__,      \
                                       __LINE__)
 #define LOGWARN                                                                \
-  multilog::Logger::getInstance().log(multilog::LogLevel::WARNING, __FILE__,   \
+  multi::log::Logger::getInstance().log(multi::log::LogLevel::WARNING, __FILE__,   \
                                       __LINE__)
 #define LOGERROR                                                               \
-  multilog::Logger::getInstance().log(multilog::LogLevel::ERROR, __FILE__,     \
+  multi::log::Logger::getInstance().log(multi::log::LogLevel::ERROR, __FILE__,     \
                                       __LINE__)
 #define LOGFATAL                                                               \
-  multilog::Logger::getInstance().log(multilog::LogLevel::FATAL, __FILE__,     \
+  multi::log::Logger::getInstance().log(multi::log::LogLevel::FATAL, __FILE__,     \
                                       __LINE__)
 #define LOGCRIT                                                                \
-  multilog::Logger::getInstance().log(multilog::LogLevel::CRITICAL, __FILE__,  \
+  multi::log::Logger::getInstance().log(multi::log::LogLevel::CRITICAL, __FILE__,  \
                                       __LINE__)
 #endif

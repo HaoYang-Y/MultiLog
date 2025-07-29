@@ -5,7 +5,8 @@
 #include "logger.h"
 #include <fstream>
 
-namespace multilog {
+namespace multi{
+namespace log {
 class AppenderFile : public Appender {
 public:
   AppenderFile(size_t size);
@@ -21,5 +22,6 @@ private:
   bool is_sync;
   std::ofstream ofs_;
 };
+} // namespace log
 } // namespace multilog
 #endif
