@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmultilog.a  CMakeFiles/multilog.dir/src/appender.cc.o CMakeFiles/multilog.dir/src/appender_file.cc.o CMakeFiles/multilog.dir/src/log_event.cc.o CMakeFiles/multilog.dir/src/log_stream.cc.o CMakeFiles/multilog.dir/src/log_type.cc.o CMakeFiles/multilog.dir/src/logger.cc.o
-/usr/bin/ranlib libmultilog.a

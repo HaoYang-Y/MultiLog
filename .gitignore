@@ -1,3 +1,8 @@
+build/
+
+/test/basic_test/basic_test
+/test/stress_test/stress_test
+/test/thread_test/thread_test
 # Prerequisites
 *.d
 
