@@ -1,0 +1,10 @@
+/home/ubantu_server/multilog/build/CMakeFiles/install/strip.dir
+/home/ubantu_server/multilog/build/CMakeFiles/install/local.dir
+/home/ubantu_server/multilog/build/CMakeFiles/install.dir
+/home/ubantu_server/multilog/build/CMakeFiles/list_install_components.dir
+/home/ubantu_server/multilog/build/CMakeFiles/rebuild_cache.dir
+/home/ubantu_server/multilog/build/CMakeFiles/edit_cache.dir
+/home/ubantu_server/multilog/build/CMakeFiles/thread_test.dir
+/home/ubantu_server/multilog/build/CMakeFiles/stress_test.dir
+/home/ubantu_server/multilog/build/CMakeFiles/basic_test.dir
+/home/ubantu_server/multilog/build/CMakeFiles/multilog.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -Wpedantic -pthread   CMakeFiles/basic_test.dir/test/basic_test/basic_test.cc.o  -o ../test/basic_test/basic_test  libmultilog.a 

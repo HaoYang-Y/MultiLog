@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -Wpedantic -pthread   CMakeFiles/stress_test.dir/test/stress_test/stress_test.cc.o  -o ../test/stress_test/stress_test  libmultilog.a 
